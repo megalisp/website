@@ -1,0 +1,30 @@
+{
+    "guide": {
+        "title": "Getting Started Series",
+        "desc": "A collection of introductory guides and practical tips for new users.",
+        "posts": [
+            {
+                "title": "Ut enim ad minim veniam",
+                "url": "/posts/lorem-getting-started-1.html"
+            },
+            {
+                "title": "Quis nostrud exercitation ullamco",
+                "url": "/posts/lorem-getting-started-2.html"
+            }
+        ]
+    },
+    "tutorial": {
+        "title": "Advanced Techniques Series",
+        "desc": "Explore advanced workflows, deep dives, and expert strategies for experienced users.",
+        "posts": [
+            {
+                "title": "Duis aute irure dolor in reprehenderit",
+                "url": "/posts/lorem-advanced-1.html"
+            },
+            {
+                "title": "Excepteur sint occaecat cupidatat non proident",
+                "url": "/posts/lorem-advanced-2.html"
+            }
+        ]
+    }
+}

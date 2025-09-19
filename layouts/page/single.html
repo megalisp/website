@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="w-9/10 max-w-7xl mx-auto px-4">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <article>
+        {{- if not (eq .Title "Bout") }}
+        <header class="mb-4">
+          <h1>{{ .Title }}</h1>
+          {{- if .Date }}
+          <div class="text-muted mb-2">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ else }}September 19, 2025{{ end }}</time>
+            {{- if .Params.author }} • {{ .Params.author }}{{- end }}
+          </div>
+          {{- else }}
+          <div class="text-muted mb-2">
+            <time>September 19, 2025</time>
+          </div>
+          {{- end }}
+          {{- if .Params.tags }}
+          <div class="mb-3">
+            {{- range .Params.tags }}
+            <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="badge bg-primary text-decoration-none me-1">{{ . }}</a>
+            {{- end }}
+          </div>
+          {{- end }}
+        </header>
+        {{- end }}
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+{{ end }}

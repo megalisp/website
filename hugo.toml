@@ -1,0 +1,86 @@
+baseURL = 'https://megalisp.github.io/'
+languageCode = 'en-us'
+title = 'MEGALISP - Building Big Things, In LISP'
+publishDir = "../megalisp.github.io"
+
+
+[params]
+  description = "MEGALISP = Building Big Things, In LISP."
+  author = "Joshua Steven Grant (ie: Jost Grant)"
+  keywords = "LISP, Racket, Scheme, Programming, Software Development"
+  
+  # Featured Video Configuration
+  [params.featuredVideo]
+    title = "Intro Vid"
+    placeholder = "[ P L A C E H O L D E R ]"
+    embedUrl = "https://www.youtube.com/embed/xghZgrE1zRI?autoplay=1&controls=0&mute=1&rel=0&modestbranding=1&showinfo=0"
+  
+  # Newsletter Configuration
+  [params.newsletter]
+    title = "Join the Launch List"
+    description = "Short, occasional updates about major projects and demos."
+    subscribeUrl = "mailto:megalisp+subscribe@example.com?subject=Subscribe"
+    buttonText = "Subscribe"
+  
+  # Featured Projects
+  [[params.featuredProjects]]
+    title = "Godot 'Gato"
+    description = "Λ Neko Themed AI Assistant / Desktop Companion Built-Into And Built-For Godot."
+    url = "https://github.com/godot-gato"
+    buttonText = "Go!"
+    image = "/proj-godot-gato.webp"
+  
+  [[params.featuredProjects]]
+    title = "UF-OS"
+    description = "Λ Bootc-Based ArchLinux Distro Aimed At Driving Godot Towards Spatial Computing."
+    url = "https://github.com/uf-os"
+    buttonText = "Go!"
+    image = "/proj-uf-os.webp"
+  
+  [[params.featuredProjects]]
+    title = "GateLinux"
+    description = "Λ Solid Steel, Build-Time ArchLinux Image Factory And Related Ecosystem."
+    url = "https://github.com/gatelinux"
+    buttonText = "Go!"
+    image = "/proj-gatelinux.webp"
+  
+[menu]
+  [[menu.main]]
+    name = "Plex"
+    url = "/plex/"
+    weight = 1
+  [[menu.main]]
+    name = "Proj"
+    url = "/proj/"
+    weight = 2
+  [[menu.main]]
+    name = "Bout"
+    url = "/bout/"
+    weight = 3
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 4
+  [[menu.main]]
+    name = "Series"
+    url = "/series/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github-dark"
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 4
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+

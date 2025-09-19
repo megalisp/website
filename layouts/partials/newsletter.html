@@ -1,0 +1,13 @@
+<style>
+.newsletter-card { background: linear-gradient(180deg, #0b0b0b, #1a1a1a); padding: 1rem; border-radius: 8px; color: #eaeaea; border: 1px solid rgba(255,255,255,0.03); box-shadow: 0 8px 28px rgba(0,0,0,0.7); }
+</style>
+
+{{- if .Site.Params.newsletter }}
+<section class="newsletter">
+  <div class="newsletter-card">
+    <h3>{{ .Site.Params.newsletter.title | default "Join the Launch List" }}</h3>
+    <p>{{ .Site.Params.newsletter.description | default "Short, occasional updates about major projects and demos." }}</p>
+    <p><a class="btn btn-space" href="{{ .Site.Params.newsletter.subscribeUrl }}">{{ .Site.Params.newsletter.buttonText | default "Subscribe" }}</a></p>
+  </div>
+</section>
+{{- end }}
