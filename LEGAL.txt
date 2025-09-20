@@ -1,2 +1,2 @@
-This Repo Is Tri-Licensed Under -- At Your Option, Under The
+This Repo Is Tri-Licensed Under -- At Your Option,
 The MIT License, The Apache2 License, & CC-BY 4.0 License.
