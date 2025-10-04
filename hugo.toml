@@ -24,25 +24,47 @@ publishDir = "../megalisp.github.io"
   
   # Featured Projects
   [[params.featuredProjects]]
+    title = "GDMode"
+    description = "Λ Physics / Creative Sandbox Environment Built In Godot For Experimentation And Play."
+    url = "https://github.com/gdmode"
+    buttonText = "Go!"
+    image = "/proj-gdmode.png"
+  
+  [[params.featuredProjects]]
+    title = "Blocksmith"
+    description = "Λ Voxel Based Survival-Sandbox Platform For Godot By The Found3 Team."
+    url = "https://github.com/found3/blocksmith"
+    buttonText = "Go!"
+    image = "/proj-blocksmith.webp"
+  
+  # Also Working On Projects
+  [[params.alsoWorkingOn]]
     title = "Godot 'Gato"
     description = "Λ Neko Themed AI Assistant / Desktop Companion Built-Into And Built-For Godot."
     url = "https://github.com/godot-gato"
     buttonText = "Go!"
     image = "/proj-godot-gato.webp"
   
-  [[params.featuredProjects]]
+  [[params.alsoWorkingOn]]
     title = "UF-OS"
     description = "Λ Bootc-Based ArchLinux Distro Aimed At Driving Godot Towards Spatial Computing."
     url = "https://github.com/uf-os"
     buttonText = "Go!"
     image = "/proj-uf-os.webp"
   
-  [[params.featuredProjects]]
+  [[params.alsoWorkingOn]]
     title = "GateLinux"
     description = "Λ Solid Steel, Build-Time ArchLinux Image Factory And Related Ecosystem."
     url = "https://github.com/gatelinux"
     buttonText = "Go!"
     image = "/proj-gatelinux.webp"
+  
+  [[params.alsoWorkingOn]]
+    title = "Godot-Lisp"
+    description = "Λ Custom LISP Implementation x Tooling (Editor Support, Etc) For The Godot Game Engine."
+    url = "https://github.com/godot-lisp"
+    buttonText = "Go!"
+    image = "/proj-godot-lisp.webp"
   
 [menu]
   [[menu.main]]

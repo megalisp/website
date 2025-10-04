@@ -12,8 +12,29 @@
 {{- if .Site.Params.featuredProjects }}
 <section class="featured">
   <h2>Featured Projects</h2>
+  <h3 style="color: #f97316; font-size: 1rem; margin-bottom: 1.5rem; text-align: left;">Focused on rn:</h3>
   <div class="featured-grid">
     {{- range .Site.Params.featuredProjects }}
+    <div class="feature-card">
+      {{- if .image }}
+      <img src="{{ .image }}" alt="{{ .title }}" class="feature-card-image">
+      {{- end }}
+      <div class="feature-card-content">
+        <h3><a href="{{ .url }}">{{ .title }}</a></h3>
+        <p class="muted">{{ .description }}</p>
+        <p><a class="btn btn-sm btn-space" href="{{ .url }}">{{ .buttonText | default "Read" }}</a></p>
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- if .Site.Params.alsoWorkingOn }}
+<section class="featured">
+  <h3 style="color: #f97316; font-size: 1rem; margin-bottom: 1.5rem; text-align: left;">Also Working On</h3>
+  <div class="featured-grid">
+    {{- range .Site.Params.alsoWorkingOn }}
     <div class="feature-card">
       {{- if .image }}
       <img src="{{ .image }}" alt="{{ .title }}" class="feature-card-image">
