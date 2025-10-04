@@ -14,16 +14,18 @@
 .vault-card:hover .vault-desc { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
 .vault-card:hover { outline-color: #ffffff; border-color: rgba(255,255,255,0.12); }
 .vault-card:hover h4, .vault-card:hover h4 a, .vault-card:hover a { color: #ffffff; }
+.vaults-wheel-link { display: inline-block; padding: 0.8rem; border-radius: 50%; transition: background-color 0.2s ease; }
+.vaults-wheel-link:hover { background-color: #f97316; }
 </style>
 
 {{ $vaults := slice 
-  (dict "emoji" "🧠" "name" "Megalo" "url" "https://megalisp.github.io/vaults/megalo" "desc" "Collections Of Personal Notes, Writing / Pieces, Assets / Gallery, Etc.")
-  (dict "emoji" "🗿" "name" "Mania" "url" "https://megalisp.github.io/vaults/mania" "desc" "Sporadic, Spastic Dropbox Of Thoughts, Fragments Of An Idea, Misc Thoughts.")
-  (dict "emoji" "🤖" "name" "Mecha" "url" "https://megalisp.github.io/vaults/mecha" "desc" "The Mechanics Of Game Systems, 'Engines', Simulations, And Interactive Tooling.")
-  (dict "emoji" "🌞" "name" "G'Day" "url" "https://megalisp.github.io/vaults/gday" "desc" "Devlog Notes on GDMode, And Related Ecosystem (Godot-Gato, UF-OS, Etc, Etc.)")
-  (dict "emoji" "🧊" "name" "Ice3" "url" "https://megalisp.github.io/vaults/ice3" "desc" "Devlog Notes on Blocksmith, And Related Ecosystem (Found3 in-general, Cubicle, Etc.)")
-  (dict "emoji" "⚙️" "name" "Shift" "url" "https://megalisp.github.io/vaults/shift" "desc" "Misc 'Shift' I'm Doing In Godot - A General Experiments / Case-Studies And Personal Docs..")
-  (dict "emoji" "⚽" "name" "Goli" "url" "https://megalisp.github.io/vaults/goli" "desc" "What I want in a Game-centered Lisp: Documenting Ideas, And Attempts To Implement It In-General.")
+  (dict "emoji" "🧠" "name" "Megalo" "url" "https://megalisp.github.io/vault-megalo/index.html" "desc" "Collections Of Personal Notes, Writing / Pieces, Assets / Gallery, Etc.")
+  (dict "emoji" "🗿" "name" "Mania" "url" "https://megalisp.github.io/vault-mania/index.html" "desc" "Sporadic, Spastic Dropbox Of Thoughts, Fragments Of An Idea, Misc Thoughts.")
+  (dict "emoji" "🤖" "name" "Mecha" "url" "https://megalisp.github.io/vault-mecha/index.html" "desc" "The Mechanics Of Game Systems, 'Engines', Simulations, And Interactive Tooling.")
+  (dict "emoji" "🌞" "name" "G'Day" "url" "https://megalisp.github.io/vault-gday/index.html" "desc" "Devlog Notes on GDMode, And Related Ecosystem (Godot-Gato, UF-OS, Etc, Etc.)")
+  (dict "emoji" "🧊" "name" "Ice3" "url" "https://megalisp.github.io/vault-ice3/index.html" "desc" "Devlog Notes on Blocksmith, And Related Ecosystem (Found3 in-general, Cubicle, Etc.)")
+  (dict "emoji" "⚙️" "name" "Shift" "url" "https://megalisp.github.io/vault-shift/index.html" "desc" "Misc 'Shift' I'm Doing In Godot - A General Experiments / Case-Studies And Personal Docs..")
+  (dict "emoji" "⚽" "name" "Goli" "url" "https://megalisp.github.io/vault-goli/index.html" "desc" "What I want in a Game-centered Lisp: Documenting Ideas, And Attempts To Implement It In-General.")
 }}
 
 <section class="vaults" style="text-align:center; margin-top:1.5rem;">
@@ -44,6 +46,9 @@
         <div class="vault-desc">{{ .desc }}</div>
       </div>
       {{ end }}
+    </div>
+    <div style="margin-top: 1.5rem; text-align: center;">
+      <a href="https://megalisp.github.io/vaults/" class="vaults-wheel-link" style="font-size: 2rem; text-decoration: none;" title="View All Vaults">🛞</a>
     </div>
   </div>
 </section>
